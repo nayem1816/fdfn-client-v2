@@ -14,15 +14,15 @@ import './Header.css';
 import { Link } from 'react-router-dom';
 
 const pages = [
-    'Home',
-    'Pay bill',
-    'Packages',
-    'FTP Site',
-    'Live Tv',
-    'Movies',
-    'Coverages',
-    'Contact',
-    'About',
+    { id: 1, name: 'Home', link: 'home' },
+    { id: 2, name: 'Pay bill', link: 'payBill' },
+    { id: 3, name: 'Packages', link: 'packages' },
+    { id: 4, name: 'FTP Site', link: 'ftpSite' },
+    { id: 5, name: 'Live Tv', link: 'liveTv' },
+    { id: 6, name: 'Movies', link: 'movies' },
+    { id: 7, name: 'Coverages', link: 'coverage' },
+    { id: 8, name: 'Contact', link: 'contact' },
+    { id: 9, name: 'About', link: 'about' },
 ];
 
 const Header = () => {
@@ -97,11 +97,13 @@ const Header = () => {
                         >
                             {pages.map((page) => (
                                 <MenuItem
-                                    key={page}
+                                    key={page.id}
                                     onClick={handleCloseNavMenu}
                                 >
                                     <Typography textAlign="center">
-                                        {page}
+                                        <Link to={`/${page.link}`}>
+                                            {page.name}
+                                        </Link>
                                     </Typography>
                                 </MenuItem>
                             ))}
@@ -133,9 +135,12 @@ const Header = () => {
                         }}
                     >
                         {pages.map((page) => (
-                            <Link className="" to="">
+                            <Link
+                                key={page.id}
+                                style={{ color: 'black' }}
+                                to={`/${page.link}`}
+                            >
                                 <Button
-                                    key={page}
                                     onClick={handleCloseNavMenu}
                                     sx={{
                                         my: 2,
@@ -147,7 +152,7 @@ const Header = () => {
                                         },
                                     }}
                                 >
-                                    {page}
+                                    {page.name}
                                 </Button>
                             </Link>
                         ))}

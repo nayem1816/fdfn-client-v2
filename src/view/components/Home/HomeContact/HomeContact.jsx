@@ -9,7 +9,7 @@ const HomeContact = () => {
                 sx={{
                     border: '1px solid #e0e0e0',
                     p: 5,
-                    m: 5,
+                    m: { xs: 0, sm: 0, md: 5, lg: 5, xl: 5 },
                     borderRadius: 3,
                 }}
             >
@@ -51,7 +51,13 @@ const HomeContact = () => {
                         xl={6}
                         sx={{
                             display: 'flex',
-                            justifyContent: 'end',
+                            justifyContent: {
+                                xs: 'center',
+                                sm: 'center',
+                                md: 'end',
+                                lg: 'end',
+                                xl: 'end',
+                            },
                             alignItems: 'center',
                         }}
                     >

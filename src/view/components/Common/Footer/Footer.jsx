@@ -13,33 +13,57 @@ const Footer = () => {
     return (
         <Container sx={{ mt: 15, mb: 5 }}>
             <Box>
-                <Grid container spacing={3}>
-                    <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
-                        <img
-                            src={fdfnLogo}
-                            alt="FDFN LOGO"
-                            width="200px"
-                            height="160px"
-                        />
-                        <Box
-                            sx={{
-                                width: '200px',
-                                display: 'flex',
-                                justifyContent: 'center',
-                            }}
-                        >
-                            <IconButton color="primary">
-                                <TwitterIcon />
-                            </IconButton>
-                            <IconButton color="primary">
-                                <FacebookIcon />
-                            </IconButton>
-                            <IconButton color="primary">
-                                <InstagramIcon />
-                            </IconButton>
-                            <IconButton color="primary">
-                                <YouTubeIcon />
-                            </IconButton>
+                <Grid
+                    container
+                    spacing={3}
+                    sx={{ display: 'flex', justifyContent: 'center' }}
+                >
+                    <Grid
+                        item
+                        xs={12}
+                        sm={12}
+                        md={4}
+                        lg={4}
+                        xl={4}
+                        sx={{
+                            display: 'flex',
+                            justifyContent: {
+                                xs: 'center',
+                                sm: 'center',
+                                md: 'start',
+                                lg: 'start',
+                                xl: 'start',
+                            },
+                        }}
+                    >
+                        <Box>
+                            <img
+                                src={fdfnLogo}
+                                alt="FDFN LOGO"
+                                width="200px"
+                                height="160px"
+                            />
+                            <Box
+                                sx={{
+                                    width: '200px',
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    textAlign: 'center',
+                                }}
+                            >
+                                <IconButton color="primary">
+                                    <TwitterIcon />
+                                </IconButton>
+                                <IconButton color="primary">
+                                    <FacebookIcon />
+                                </IconButton>
+                                <IconButton color="primary">
+                                    <InstagramIcon />
+                                </IconButton>
+                                <IconButton color="primary">
+                                    <YouTubeIcon />
+                                </IconButton>
+                            </Box>
                         </Box>
                     </Grid>
                     <Grid
@@ -51,7 +75,7 @@ const Footer = () => {
                         xl={4}
                         sx={{ display: 'flex', justifyContent: 'center' }}
                     >
-                        <Box>
+                        <Box sx={{ textAlign: 'center' }}>
                             <Typography sx={{ fontWeight: 600 }} variant="h5">
                                 Office
                             </Typography>
@@ -112,7 +136,17 @@ const Footer = () => {
                         md={4}
                         lg={4}
                         xl={4}
-                        sx={{ display: 'flex', justifyContent: 'end' }}
+                        sx={{
+                            display: 'flex',
+                            justifyContent: {
+                                xs: 'center',
+                                sm: 'center',
+                                md: 'end',
+                                lg: 'end',
+                                xl: 'end',
+                            },
+                            textAlign: 'center',
+                        }}
                     >
                         <Box>
                             <Typography sx={{ fontWeight: 600 }} variant="h5">

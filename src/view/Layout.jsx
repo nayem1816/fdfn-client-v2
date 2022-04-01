@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from './components/Common/Footer/Footer';
 import Header from './components/Common/Header/Header';
-import Home from './pages/Home/Home';
+import Main from './pages/Main';
 
 const Layout = () => {
     return (
@@ -10,7 +10,7 @@ const Layout = () => {
                 <Header />
             </div>
             <div className="main">
-                <Home />
+                <Main />
             </div>
             <div className="footer">
                 <Footer />
