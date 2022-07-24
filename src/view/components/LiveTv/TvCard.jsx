@@ -26,7 +26,7 @@ const TvCard = () => {
                 variant="h3"
                 gutterBottom
             >
-                FTP Sites
+                Live TV Channels
             </Typography>
             <Box sx={{ flexGrow: 1 }}>
                 <Grid

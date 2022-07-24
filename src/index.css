@@ -22,3 +22,9 @@ span {
     padding: 0;
     margin: 0;
 }
+.text-red {
+    color: red;
+}
+.text-justify {
+    text-align: justify;
+}

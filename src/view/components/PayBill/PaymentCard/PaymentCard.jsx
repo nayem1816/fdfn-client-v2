@@ -1,12 +1,20 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { Container, Box, Typography, TextField, Button } from '@mui/material';
 import CustomAlert from './../../Common/Custom/CustomBtn/CustomAlert';
 import { useForm } from 'react-hook-form';
+import PayBillModal from '../PayBillModal/PayBillModal';
 
 const PaymentCard = () => {
     const [backData, setBackData] = useState([]);
     const [alertBox, setAlertBox] = useState(false);
     const [successMsg, setSuccessMsg] = useState('');
+
+    //modal
+    const [open, setOpen] = useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+
     const {
         register,
         handleSubmit,
@@ -44,6 +52,21 @@ const PaymentCard = () => {
                 <hr
                     style={{ margin: '10px 0px', border: '1px solid #e0e0e0' }}
                 />
+                <Typography sx={{ my: 2 }} component="h5">
+                    How to make pay bill?{' '}
+                    <Typography
+                        component="span"
+                        sx={{
+                            cursor: 'pointer',
+                            color: 'red',
+                            textDecoration: 'underline',
+                        }}
+                        onClick={handleOpen}
+                    >
+                        click here...
+                    </Typography>
+                    <PayBillModal open={open} handleClose={handleClose} />
+                </Typography>
                 <Box>
                     <CustomAlert
                         sx={{ display: alertBox ? 'block' : 'none' }}

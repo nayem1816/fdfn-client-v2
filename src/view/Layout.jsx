@@ -9,7 +9,7 @@ const Layout = () => {
             <div className="header">
                 <Header />
             </div>
-            <div className="main">
+            <div className="main" style={{ minHeight: '45vh' }}>
                 <Main />
             </div>
             <div className="footer">

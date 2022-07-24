@@ -10,6 +10,8 @@ import CallIcon from '@mui/icons-material/Call';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+    const date = new Date();
+    const year = date.getFullYear();
     return (
         <Container sx={{ mt: 15, mb: 5 }}>
             <Box>
@@ -179,7 +181,7 @@ const Footer = () => {
                     </Grid>
                 </Grid>
                 <Typography sx={{ textAlign: 'center', my: 8 }}>
-                    &copy; 2021 All rights reserved & Developed by Md Nayem
+                    &copy; {year} All rights reserved & Developed by Md Nayem
                     Hossain
                 </Typography>
             </Box>

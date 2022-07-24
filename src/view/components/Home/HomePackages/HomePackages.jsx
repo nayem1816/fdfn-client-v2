@@ -83,8 +83,8 @@ export default function HomePackages() {
                         aria-label="full width tabs example"
                     >
                         <Tab label="All Packages" {...a11yProps(0)} />
-                        <Tab label="Normal Speed" {...a11yProps(1)} />
-                        <Tab label="High Speed" {...a11yProps(2)} />
+                        <Tab label="Govt. Packages" {...a11yProps(1)} />
+                        <Tab label="Spacial Packages" {...a11yProps(2)} />
                     </Tabs>
                 </AppBar>
             </Container>
