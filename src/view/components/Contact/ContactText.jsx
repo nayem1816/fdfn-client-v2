@@ -3,8 +3,8 @@ import contact from '../../../assets/images/contact_us.png';
 
 const ContactText = () => {
     return (
-        <div className="row my-4 d-flex align-items-center">
-            <div className="col-md-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center my-10 mx-2">
+            <div className="">
                 <h2 className="" style={{ fontSize: '58px' }}>
                     Need any Help? Connect with our NOC
                 </h2>
@@ -13,7 +13,7 @@ const ContactText = () => {
                     time using below contact information.
                 </p>
             </div>
-            <div className="col-md-6">
+            <div className="flex justify-center">
                 <img className="img-fluid" src={contact} alt="#" />
             </div>
         </div>

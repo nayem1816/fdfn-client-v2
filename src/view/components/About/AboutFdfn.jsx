@@ -3,8 +3,8 @@ import aboutUs2 from '../../../assets/images/about-us2.png';
 
 const AboutFdfn = () => {
     return (
-        <div className="row d-flex align-items-center my-4">
-            <div className="col md-6">
+        <div className="grid grid-cols-1 md:grid-cols-2  items-center my-10 mx-2">
+            <div className="">
                 <h2 style={{ fontSize: '48px' }} className="">
                     Why <span className="text-red">FDFN</span> Different From
                     Others
@@ -19,8 +19,8 @@ const AboutFdfn = () => {
                     Internet, Bandwidth on Demand, Data Storage & Security.
                 </p>
             </div>
-            <div className="col md-6">
-                <img className="img-fluid" src={aboutUs2} alt="#" />
+            <div className="flex justify-center">
+                <img className="" src={aboutUs2} alt="#" />
             </div>
         </div>
     );

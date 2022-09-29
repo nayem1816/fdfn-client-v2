@@ -6,7 +6,7 @@ import Mission from '../../components/About/Mission';
 
 const About = () => {
     return (
-        <div className="container">
+        <div className="container mx-auto">
             <AboutZone />
             <History />
             <AboutFdfn />

@@ -8,6 +8,8 @@ const FtpSite = React.lazy(() => import('./FtpSite/FtpSite'));
 const LiveTv = React.lazy(() => import('./LiveTv/LiveTv'));
 const About = React.lazy(() => import('./About/About'));
 const Contact = React.lazy(() => import('./Contact/Contact'));
+const Coverage = React.lazy(() => import('./Coverage/Coverage'));
+const Login = React.lazy(() => import('./Login/Login'));
 
 const Main = () => {
     return (
@@ -27,6 +29,8 @@ const Main = () => {
                 <Route path="/liveTv" element={<LiveTv />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/coverage" element={<Coverage />} />
+                <Route path="/login" element={<Login />} />
                 <Route path="*" element={<h2>Not Found</h2>} />
             </Routes>
         </Suspense>

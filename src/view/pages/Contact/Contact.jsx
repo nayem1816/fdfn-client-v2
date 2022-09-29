@@ -5,7 +5,7 @@ import ContactText from './../../components/Contact/ContactText';
 
 const Contact = () => {
     return (
-        <div className="container">
+        <div className="container mx-auto">
             <ContactText />
             <ContactBox />
             <HomeContact />

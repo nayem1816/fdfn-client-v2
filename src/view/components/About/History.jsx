@@ -3,11 +3,11 @@ import history from '../../../assets/images/history.png';
 
 const History = () => {
     return (
-        <div className="row d-flex align-items-center my-4">
-            <div className="col md-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center my-10 mx-2">
+            <div className="">
                 <img className="img-fluid" src={history} alt="#" />
             </div>
-            <div className="col md-6">
+            <div className="">
                 <h2 style={{ fontSize: '48px' }} className="">
                     History
                 </h2>

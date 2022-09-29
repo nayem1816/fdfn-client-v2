@@ -3,7 +3,7 @@ import mission from '../../../assets/images/mission.png';
 
 const Mission = () => {
     return (
-        <div className="row d-flex align-items-center my-4">
+        <div className="grid grid-cols-1 md:grid-cols-2  items-center my-10 mx-2">
             <div className="col md-6">
                 <img className="img-fluid" src={mission} alt="#" />
             </div>
